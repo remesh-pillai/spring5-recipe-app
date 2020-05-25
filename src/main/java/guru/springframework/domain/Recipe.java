@@ -23,6 +23,7 @@ public class Recipe {
     //todo add
     //private Difficulty difficulty;
 
+
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "recipe")
     private Set<Ingredient> ingredients;
 
